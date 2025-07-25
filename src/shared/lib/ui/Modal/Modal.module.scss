@@ -1,0 +1,36 @@
+.modalOverlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+}
+
+.modalContent {
+  position: fixed;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  width: 441px;
+  max-height: 336px;
+
+  background-color: white;
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 15%);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 12px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #E3E3E3;
+
+    &:hover {
+      background-color: #adadad;
+    }
+  }
+}

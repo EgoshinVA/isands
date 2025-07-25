@@ -1,0 +1,99 @@
+.comparisonPage {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 20px;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--grey-100);
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.productTable {
+  display: grid;
+  grid-template-columns: 285px 1fr;
+}
+
+.productRow {
+  display: contents;
+}
+
+.productName {
+  grid-column: 1;
+  align-self: end;
+}
+
+.checkbox {
+  cursor: pointer;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  font-size: 18px;
+  color: var(--accent);
+
+  input {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border: 2px solid var(--grey-700);
+    border-radius: 4px;
+
+    appearance: none;
+    accent-color: var(--grey-700);
+
+    &:checked {
+      border-color: var(--grey-700);
+      background-color: var(--grey-700);
+    }
+  }
+}
+
+.productValues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+@media (width <= 1100px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .checkbox {
+    font-size: 12px;
+  }
+
+  .productTable {
+    grid-template-columns: 185px 1fr;
+  }
+
+  .productName {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .productTable {
+    grid-template-columns: 125px 1fr;
+  }
+}

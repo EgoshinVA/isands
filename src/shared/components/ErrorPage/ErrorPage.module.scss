@@ -1,0 +1,49 @@
+.errorPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+
+  background: var(--white);
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 10%);
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: var(--grey-300);
+}
+
+p {
+  margin: 0 0 20px;
+  color: var(--purple);
+}
+
+.button {
+  cursor: pointer;
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+
+  background: var(--grey-300);
+
+  &:hover {
+    background: var(--grey-900);
+  }
+}

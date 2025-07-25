@@ -1,0 +1,45 @@
+.selectContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.label {
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.select {
+  display: none;
+}
+
+.optionDisplay {
+  display: flex;
+  gap: 8px;
+}
+
+.option {
+  cursor: pointer;
+
+  position: relative;
+
+  padding: 2px 0;
+
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.option.selected {
+  &::after {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+
+    height: 1px;
+
+    background-color: var(--accent);
+  }
+}

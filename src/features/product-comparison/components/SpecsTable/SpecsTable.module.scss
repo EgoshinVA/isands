@@ -1,0 +1,86 @@
+.specsTableWrapper {
+  position: relative;
+  right: 50%;
+  left: 50%;
+
+  width: 100vw;
+  margin-top: 77px;
+  margin-right: -50vw;
+  margin-left: -50vw;
+
+  background: var(--light-blue);
+}
+
+.specsTableContainer {
+  padding: 0 166px;
+}
+
+.specsTable {
+  display: grid;
+  grid-template-columns: 285px 1fr;
+  border-top: 1px solid var(--grey-500);
+}
+
+.specRow {
+  display: contents;
+}
+
+.specName {
+  grid-column: 1;
+  align-self: center;
+
+  padding: 40px 30px 40px 0;
+  border-bottom: 1px solid var(--grey-500);
+
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--grey-900);
+}
+
+.specValues {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.specValue {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--grey-500);
+
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--purple);
+  text-align: center;
+}
+
+@media (width <= 1100px) {
+  .specsTableContainer {
+    padding: 0 60px;
+  }
+
+  .specsTable {
+    grid-template-columns: 185px 1fr;
+  }
+
+  .specName {
+    font-size: 12px;
+  }
+
+  .specValue {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 768px) {
+  .specsTableContainer {
+    padding: 0 20px;
+  }
+
+  .specsTable {
+    grid-template-columns: 125px 1fr;
+  }
+}
